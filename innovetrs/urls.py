@@ -19,8 +19,11 @@ from innovet import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index,name='index'),
-    path('blooddonation',views.blood,name='blood'),
-    path('moneydonation',views.money,name='money'),
-    path('photos',views.gallary,name='gallary'),
-    path('contact',views.contact,name='contct'),
+    path('about/',views.about,name='about'),
+    path('team/',views.team,name='team'),
+    path('blooddonation/',views.blood,name='blood'),
+    path('moneydonation/',views.money,name='money'),
+    path('gallery/',views.gallery,name='gallery'),
+    path('contact/',views.contact,name='contact'),
+    path('payment/',views.payment,name='payment'),
 ]
